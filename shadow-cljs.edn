@@ -1,0 +1,11 @@
+{:deps true
+
+ :dev-http {3000 {:root "frontend/projects/app/public"}}
+
+ :nrepl {:write-port-file true}
+
+ :builds {:app {:target :browser
+                :output-dir "frontend/projects/app/public/js"
+                :asset-path "/js"
+                :compiler-options {:output-wrapper true}
+                :modules {:main {:init-fn polylith.example.frontend.app.core/init!}}}}}

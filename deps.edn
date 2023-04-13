@@ -1,0 +1,11 @@
+{:aliases  {:dev {:extra-deps {poly/backend {:local/root "backend"}
+                               poly/frontend {:local/root "frontend"}
+
+                               org.clojure/clojure {:mvn/version "1.11.1"}
+                               thheller/shadow-cljs {:mvn/version "2.22.10"}}}
+
+            :poly {:main-opts ["-m" "polylith.clj.core.poly-cli.core"]
+                   :extra-deps {polyfy/polylith
+                                {:git/url   "https://github.com/polyfy/polylith"
+                                 :sha       "bd84789c9fe41eaaf19d431f1fc8772808c9eaad"
+                                 :deps/root "projects/poly"}}}}}

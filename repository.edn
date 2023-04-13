@@ -1,0 +1,4 @@
+{:workspaces {:backend {:dir "backend"
+                        :alias "b"}
+              :frontend {:dir "frontend"
+                         :alias "f"}}}

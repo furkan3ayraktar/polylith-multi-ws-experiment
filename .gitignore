@@ -1,0 +1,19 @@
+**/classes
+**/target
+**/.cpcache
+**/.DS_Store
+**/node_modules
+**/public/js
+.shadow-cljs
+
+# REPL-related
+.nrepl-port
+
+# VSCode-related
+**/.calva/*
+.clj-kondo/*
+!.clj-kondo/config.edn
+out/*
+dist/*
+.lsp/*
+**/.portal

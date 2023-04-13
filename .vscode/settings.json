@@ -1,0 +1,34 @@
+{
+  // See https://calva.io/connect-sequences/ for more info about Calva REPL Connect Sequences
+  "calva.replConnectSequences": [
+      {
+          "projectType": "deps.edn",
+          "afterCLJReplJackInCode": "(require '[dev.backend.server] :reload) (in-ns 'dev.backend.server) (start! 6003)",
+          "name": "Polylith RealWorld Server REPL (start)",
+          "autoSelectForJackIn": true,
+          "projectRootPath": ["."],
+          "cljsType": "shadow-cljs",
+          "menuSelections": {
+              "cljAliases": ["dev"],
+              "cljsLaunchBuilds": [":app"],
+              "cljsDefaultBuild": ":app"
+          },
+      },
+      {
+          "projectType": "deps.edn",
+          "name": "Polylith RealWorld Server REPL (connect)",
+          "autoSelectForConnect": true,
+          "projectRootPath": ["."],
+          "cljsType": "shadow-cljs",
+      }
+  ],
+
+  // When autoConnectRepl is set to `true`, you can start the REPL yourself and keep it running
+  // using the command produced by: **Calva: Copy Jack-in Command Line to Clipboard**. This will
+  // ensure that Calva's dependencies are met and Calva will connect to your REPL automatically
+  // when the project is opened.
+  "calva.autoConnectRepl": true,
+
+  // Set this to `false` to prevent Calva from automatically opening the Terminal pane.
+  "calva.autoOpenJackInTerminal": true,
+}

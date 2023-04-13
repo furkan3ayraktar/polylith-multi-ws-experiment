@@ -1,0 +1,4 @@
+{:lint-as {reagent.core/with-let clojure.core/let}
+ :linters {:clojure-lsp/unused-public-var {:level :info
+                                           :exclude-regex #{"polylith.example.+\\.interface.*"
+                                                            "dev.*"}}}}

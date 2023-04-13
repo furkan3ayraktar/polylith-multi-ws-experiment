@@ -1,0 +1,4 @@
+{:paths ["src" "resources"]
+ :deps {cljs-http/cljs-http {:mvn/version "0.1.46"}}
+ :aliases {:test {:extra-paths ["test"]
+                  :extra-deps {}}}}

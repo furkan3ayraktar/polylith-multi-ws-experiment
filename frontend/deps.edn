@@ -1,0 +1,10 @@
+{:paths [; dev sources
+         "development/src"
+
+         ; test sources
+         "bases/app/test"
+         "components/bar/test"]
+ 
+ :deps {poly/app {:local/root "bases/app"}
+        poly/bar {:local/root "components/bar"}
+        reagent/reagent {:mvn/version "1.2.0"}}}

@@ -1,0 +1,11 @@
+{:paths [; dev sources
+         "development/src"
+
+         ; test sources
+         "bases/rest-api/test"
+         "components/foo/test"
+         "components/shared/test"]
+ 
+ :deps {poly/rest-api {:local/root "bases/rest-api"}
+        poly/foo {:local/root "components/foo"}
+        poly/shared {:local/root "components/shared"}}}
