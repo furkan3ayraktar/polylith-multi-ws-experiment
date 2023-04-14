@@ -1,4 +1,4 @@
-{:deps true
+{:deps {:aliases [:dev]}
 
  :dev-http {3000 {:root "frontend/projects/app/public"}}
 
