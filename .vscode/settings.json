@@ -4,9 +4,10 @@
       {
           "projectType": "deps.edn",
           "afterCLJReplJackInCode": "(require '[dev.backend.server] :reload) (in-ns 'dev.backend.server) (start! 6003)",
-          "name": "Polylith RealWorld Server REPL (start)",
-          "autoSelectForJackIn": true,
+          "name": "Polylith RealWorld Server REPL (deps.edn)",
           "projectRootPath": ["."],
+          //  "autoSelectForJackIn": true,
+          //  "autoSelectForConnect": true,
           "cljsType": "shadow-cljs",
           "menuSelections": {
               "cljAliases": ["dev"],
@@ -15,12 +16,18 @@
           },
       },
       {
-          "projectType": "deps.edn",
-          "name": "Polylith RealWorld Server REPL (connect)",
-          "autoSelectForConnect": true,
+          "projectType": "shadow-cljs",
+          "afterCLJReplJackInCode": "(require '[dev.backend.server] :reload) (in-ns 'dev.backend.server) (start! 6003)",
+          "name": "Polylith RealWorld Server REPL (shadow-cljs)",
           "projectRootPath": ["."],
+          //  "autoSelectForJackIn": true,
+          //  "autoSelectForConnect": true,
           "cljsType": "shadow-cljs",
-      }
+          "menuSelections": {
+              "cljsLaunchBuilds": [":app"],
+              "cljsDefaultBuild": ":app"
+          },
+      },
   ],
 
   // When autoConnectRepl is set to `true`, you can start the REPL yourself and keep it running
